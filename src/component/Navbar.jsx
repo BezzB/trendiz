@@ -2,7 +2,6 @@ import React from "react";
 import { AiOutlineLogin } from "react-icons/ai";
 import { BiSolidCart } from "react-icons/bi";
 import { PiSignInBold } from "react-icons/pi";
-import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -12,14 +11,14 @@ export const Navbar = () => {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <NavLink className="navbar-brand fw-bold fs-4" to="/">
+          <a className="navbar-brand fw-bold fs-4" href="/">
             <img
               src="hairlogo.PNG"
               alt="Trendiz-Hair"
               width="300"
               height="40"
             ></img>
-          </NavLink>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -34,36 +33,36 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul className="navbar-nav mx-auto mb-3 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/products">
+                <a className="nav-link" href="/products">
                   Products{" "}
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
+                <a className="nav-link" to="/about">
                   About{" "}
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
+                <a className="nav-link" to="/contact">
                   Contact{" "}
-                </NavLink>
+                </a>
               </li>
             </ul>
             <div className="buttons">
-              <NavLink to="/login" className="btn btn-outline-light">
+              <a to="/login" className="btn btn-outline-light">
                 <AiOutlineLogin className="me-1" /> Login
-              </NavLink>
-              <NavLink to="/register" className="btn btn-outline-light ms-2">
+              </a>
+              <a to="/register" className="btn btn-outline-light ms-2">
                 <PiSignInBold className="me-1" /> Register
-              </NavLink>
-              <NavLink to="/cart" className="btn btn-outline-light ms-2">
+              </a>
+              <a to="/cart" className="btn btn-outline-light ms-2">
                 <BiSolidCart className="me-1" /> Cart (0){" "}
-              </NavLink>
+              </a>
             </div>
           </div>
         </div>
