@@ -1,0 +1,46 @@
+.navbar-nav a{
+    font-size: 18px;
+}
+.hero {
+    background-color: #fff;
+    height: 550vh;
+  }
+  
+  /* .card {
+    text-align: left;
+    border: none;
+    background-color: #fff;
+    padding: 0px;
+    margin-bottom: 20px;
+  } */
+  
+  .card-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: linear-gradient(to right, #ffc107, #f4a800);
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-3 {
+    flex: 1 1 25%;
+  }
+  
+  
+ 
