@@ -1,6 +1,15 @@
 .navbar-nav a{
     font-size: 18px;
+
 }
+.nav-item li.active{
+  background-color: #f4a800;
+}
+
+.nav-item li:hover{
+  background-color: #f4a800;
+}
+
 .hero {
     background-color: #fff;
     height: 550vh;

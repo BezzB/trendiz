@@ -1,16 +1,21 @@
-import "./App.css";
-import { Navbar } from "./component/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import {Home } from "./component/Home"
+import "./App.css"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Navbar } from "./component/Navbar"
+import { Home } from "./component/Home"
+
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-     
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path='/' component={Home } />
+          {/* <Route path='/singlepage/:id' component={SinglePage} exact /> */}
+        </Routes>        
+      </Router>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
